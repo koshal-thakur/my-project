@@ -1,0 +1,42 @@
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+  }
+  
+  .QUIZ {
+    font-size: 2.5em;
+  }
+  
+  .navigation a {
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+  
+  .navigation .btnlogin-popup {
+    width: 100px;
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 15px;
+  }
+  
+  .QUIZ {
+    font-size: 2em;
+  }
+  
+  .navigation a {
+    font-size: 0.8em;
+    margin-left: 10px;
+  }
+  
+  .navigation .btnlogin-popup {
+    width: 90px;
+    font-size: 0.8em;
+    margin-left: 10px;
+  }
+}

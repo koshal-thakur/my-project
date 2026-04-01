@@ -1,0 +1,206 @@
+/* css used for welcome page of quiz terms and condition */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+:root {
+  --theme-primary: #0f766e;
+  --theme-secondary: #f97316;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 118, 110, 0.42)),
+    url('welcomebackground.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(15, 23, 42, 0.92);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.QUIZ {
+  margin-left: -65px;
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+      background-position: 2000px 0;
+  }
+}
+
+.navigation .btnlogin-popup {
+  width:130px;
+  height: 50px;
+  background: transparent;
+  border:2px solid rgba(94, 234, 212, 0.9);
+  outline: none;
+  border-radius:6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color:#ccfbf1;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -6px;
+  width: 100%;
+  height:3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+.navigation .btnlogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+.container {
+  max-width: 1450px;
+  margin: 110px auto 30px;
+  padding: 40px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url('dbms.jpg') no-repeat right bottom;
+  background-size: 260px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+
+h1 {
+    
+  margin-top: 80px ;
+  text-align: center;
+  margin-bottom: 40px;
+} 
+
+/* 2026 theme refresh */
+header{
+  background: rgba(15,10,30,.92);
+  -webkit-backdrop-filter: blur(14px) saturate(170%);
+          backdrop-filter: blur(14px) saturate(170%);
+  border-bottom: 1px solid rgba(124,58,237,.22);
+}
+
+.QUIZ{
+  -webkit-text-stroke: 0;
+  background: linear-gradient(135deg, #2dd4bf, #fb923c);
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.navigation .btnlogin-popup{
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+  border: none;
+  border-radius: 999px;
+}
+
+.navigation .btnlogin-popup:hover{
+  color:#fff;
+  opacity:.9;
+}
+
+.container{
+  box-shadow: 0 20px 52px rgba(124,58,237,.18);
+}
+
+html body .container h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+ol {
+  margin-bottom: 20px;
+  list-style: disc;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.img_size{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .QUIZ {
+    margin-left: 0;
+    font-size: 1.7em;
+  }
+
+  .navigation .btnlogin-popup,
+  .navigation a {
+    margin-left: 10px;
+    font-size: 0.95em;
+  }
+
+  .container {
+    margin-top: 120px;
+    padding: 20px;
+    background-size: 160px auto;
+  }
+
+  .img_size {
+    display: none;
+  }
+}

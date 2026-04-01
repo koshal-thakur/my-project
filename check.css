@@ -1,0 +1,248 @@
+/* css used for main page(startup) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Set default styles for all devices */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  height: 100%;
+  background: linear-gradient(135deg, #ecfeff 0%, #dbeafe 74%);
+}
+
+/* Define styles for small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  header{
+    padding: 10px 20px;
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+
+  .navigation .btnlogin-popup {
+    width: 100px;
+    height: 40px;
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+
+  .img_size{
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Define styles for medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .container {
+    padding: 50px;
+  }
+
+  h1 {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    font-size: 2.5em;
+  }
+
+  html body .container h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+/* Define styles for large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .container {
+    margin: 50px auto;
+    max-width: 1200px;
+  }
+
+  .navigation a {
+    font-size: 1.1em;
+    margin-left: 40px;
+  }
+
+  .navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    font-size: 1.1em;
+    margin-left: 40px;
+  }
+
+  .img_size{
+    float: right;
+    width: 40%;
+  }
+}
+
+/* Define styles for extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .container {
+    padding: 80px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  html body .container h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Quiz-Banner-8-10-20-1200x630-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(15,10,30,.92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.QUIZ {
+  margin-left: -65px;
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 0;
+  background: linear-gradient(135deg, #2dd4bf, #fb923c);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-position: 0 0;
+  animation: none;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+} 
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    width: 100%;
+    height:3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+    width:130px;
+    height: 50px;
+    background: linear-gradient(135deg, #0ea5a0, #f97316);
+    border: none;
+    outline: none;
+    border-radius:999px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnlogin-popup:hover {
+  opacity: .9;
+  color: #fff;
+}
+ .row{
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+ }
+
+ .col-2{
+    flex-basis: 10%;
+    min-width: 300px;
+ }
+ .col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+ }
+ .col-2 p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0;
+ }
+ footer {
+  background-color: #334155;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img {
+    float:left;
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+  /* vertical-align: middle; */
+}
+footer i {
+    float: left;
+    margin: 0; 
+    font-size: 15px;
+    line-height: 50px;
+    margin-left: 22px;
+}
+footer p {
+    float: right;
+  /* display: inline-block; */
+  margin: 0;
+  font-size: 18px;
+  line-height: 50px;
+}

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5a0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Welcome to QUIZ COMPETITORS</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="public-landing">
+    <header>
+        <h2 class="QUIZ">QUIZ COMPETITORS</h2>
+        <nav class="navigation">
+            <a href="index2.html" class="nav-active">Home</a>
+            <a href="about1.php">About Us</a>
+            <a href="contact2.php">Contact</a>
+            <a href="Scoreboard.php">Rankings</a>
+            <a href="adminlogin.php">Admin</a>
+            <button onclick="location.href='LOGINpage.php';" id="myButton" class="btnlogin-popup">Login</button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">🌙</button>
+        </nav>
+    </header>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <main class="landing-main">
+
+        <!-- ── HERO ── -->
+        <section class="hero-section">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Season 2026 is Live — Join Now!
+                </div>
+                <div class="hero-india-time" id="indiaDateTime" aria-live="polite">🇮🇳 India Time: Loading...</div>
+                <h1>Test Your Knowledge,<br><span class="highlight">Compete with the Best</span></h1>
+                <p>Join students competing in timed quizzes across Science, Technology, Mathematics, and General Knowledge. A small entry fee of ₹10 is required per competition, and winning amounts are awarded as per the announced prize list.</p>
+                <p><strong>Prize Breakdown:</strong> 1st, 2nd, and 3rd winning amounts are distributed as per each competition's prize announcement.</p>
+                <div class="hero-buttons">
+                    <button onclick="location.href='LOGINpage.php';" class="btn btn-primary">🚀 Start Quiz Now</button>
+                    <button onclick="location.href='about1.php';" class="btn btn-secondary">Learn More →</button>
+                    <button id="installAppBtn" class="btn btn-secondary install-app-btn" type="button" hidden>📲 Install App</button>
+                </div>
+                <div class="hero-proof-grid">
+                    <div class="hero-proof-card">
+                        <strong>Fast & Fair</strong>
+                        <span>Timed rounds with secure single-attempt flow</span>
+                    </div>
+                    <div class="hero-proof-card">
+                        <strong>Live Rankings</strong>
+                        <span>Performance updates instantly after completion</span>
+                    </div>
+                    <div class="hero-proof-card">
+                        <strong>Smart Learning</strong>
+                        <span>Topic-focused practice with real competition</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Platform highlights">
+            <div class="trust-track">
+                <span class="trust-chip">⚡ Instant Results</span>
+                <span class="trust-chip">🔐 Secure Attempts</span>
+                <span class="trust-chip">🏆 Live Leaderboard</span>
+                <span class="trust-chip">📱 Mobile First</span>
+                <span class="trust-chip">🎯 Topic Wise Practice</span>
+                <span class="trust-chip">🧠 Skill Based Challenges</span>
+                <span class="trust-chip">⚡ Instant Results</span>
+                <span class="trust-chip">🔐 Secure Attempts</span>
+                <span class="trust-chip">🏆 Live Leaderboard</span>
+                <span class="trust-chip">📱 Mobile First</span>
+                <span class="trust-chip">🎯 Topic Wise Practice</span>
+                <span class="trust-chip">🧠 Skill Based Challenges</span>
+            </div>
+        </section>
+
+        <!-- ── FEATURES ── -->
+        <section class="features-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Why Us</span>
+                <h2 class="section-title">Everything you need to win</h2>
+                <p class="section-sub">A complete quiz platform built for students who want to challenge themselves and rise to the top.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon-wrap">⚡</div>
+                    <h3>Timed Quizzes</h3>
+                    <p>Fast-paced challenges designed to test your knowledge and speed under pressure.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon-wrap">🎯</div>
+                    <h3>Multiple Topics</h3>
+                    <p>Choose from DBMS, Programming Languages, Science, Mathematics, and more.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon-wrap">🏆</div>
+                    <h3>Live Leaderboard</h3>
+                    <p>See where you stand on the global ranking and compete with top performers.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-4">
+                    <div class="feature-icon-wrap">📊</div>
+                    <h3>Instant Feedback</h3>
+                    <p>Get immediate results and detailed performance analytics after each quiz.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-5">
+                    <div class="feature-icon-wrap">🎓</div>
+                    <h3>Smart Questions</h3>
+                    <p>Questions are randomly selected and aligned with BCA/BSC course content.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-6">
+                    <div class="feature-icon-wrap">🌍</div>
+                    <h3>Community</h3>
+                    <p>Connect with peers, share results, and challenge friends directly.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon-wrap">🔀</div>
+                    <h3>Random Question Order</h3>
+                    <p>Every attempt shuffles question order — no two quizzes feel the same, keeping it fair for everyone.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon-wrap">🛡️</div>
+                    <h3>Fair &amp; Secure</h3>
+                    <p>One attempt per quiz session per user. Results are locked once submitted — no manipulation.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon-wrap">📱</div>
+                    <h3>Play on Any Device</h3>
+                    <p>Fully responsive design — attempt quizzes on your phone, tablet, or desktop with ease.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── STATS ── -->
+        <section class="stats-section">
+            <div class="section-header reveal">
+                <span class="section-tag">By the Numbers</span>
+                <h2 class="section-title">Quiz Competitors at a Glance</h2>
+                <p class="section-sub">Growing every semester with more content, more players, and more competition.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal reveal-delay-1">
+                    <span class="stat-icon">📝</span>
+                    <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                    <div class="stat-label">Quiz Questions</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-2">
+                    <span class="stat-icon">📚</span>
+                    <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                    <div class="stat-label">Topic Categories</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-3">
+                    <span class="stat-icon">⏱️</span>
+                    <div class="stat-number" data-target="60" data-suffix="s">0</div>
+                    <div class="stat-label">Per Question</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-4">
+                    <span class="stat-icon">🎁</span>
+                    <div class="stat-number" data-target="10" data-prefix="₹">0</div>
+                    <div class="stat-label">Entry Fee / Competition</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── QUIZ PREVIEW ── -->
+        <section class="quiz-preview-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Try It Out</span>
+                <h2 class="section-title">Experience a Real Quiz Question</h2>
+                <p class="section-sub">Get a feel for how our quizzes work — pick the right answer before the timer runs out!</p>
+            </div>
+            <div class="quiz-preview-card reveal">
+                <div class="qp-header">
+                    <span class="qp-category">🐍 Python</span>
+                    <div class="qp-timer" id="qpTimer">⏱ <span id="qpSecs">15</span>s</div>
+                </div>
+                <div class="qp-progress"><div class="qp-progress-bar" id="qpBar"></div></div>
+                <p class="qp-question">Which Python keyword is used to define a function?</p>
+                <div class="qp-options" id="qpOptions">
+                    <button class="qp-option" data-correct="false">A. &nbsp;func</button>
+                    <button class="qp-option" data-correct="true">B. &nbsp;def</button>
+                    <button class="qp-option" data-correct="false">C. &nbsp;define</button>
+                    <button class="qp-option" data-correct="false">D. &nbsp;function</button>
+                </div>
+                <div class="qp-result" id="qpResult"></div>
+                <div class="qp-footer">
+                    <span class="qp-hint">💡 Hint: It's a 3-letter keyword</span>
+                    <button class="btn btn-primary qp-cta" onclick="location.href='LOGINpage.php';">Take the Full Quiz →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── HOW IT WORKS ── -->
+        <section class="how-works-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">Get started in 4 simple steps</h2>
+                <p class="section-sub">From registration to the leaderboard — it takes less than 5 minutes.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-box reveal reveal-delay-1">
+                    <div class="step-number">1</div>
+                    <h3>Sign Up</h3>
+                    <p>Register with your email and password to create your account.</p>
+                </div>
+                <div class="step-box reveal reveal-delay-2">
+                    <div class="step-number">2</div>
+                    <h3>Choose Quiz</h3>
+                    <p>Select from available quizzes based on your subject interest.</p>
+                </div>
+                <div class="step-box reveal reveal-delay-3">
+                    <div class="step-number">3</div>
+                    <h3>Answer Questions</h3>
+                    <p>Solve 7–9 questions within the given time limit.</p>
+                </div>
+                <div class="step-box reveal reveal-delay-4">
+                    <div class="step-number">4</div>
+                    <h3>Get Results</h3>
+                    <p>See your score instantly and check the global rankings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CATEGORIES ── -->
+        <section class="categories-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Categories</span>
+                <h2 class="section-title">Quiz topics available now</h2>
+                <p class="section-sub">Pick a subject and prove your mastery against other students.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-badge reveal reveal-delay-1">
+                    <span class="badge-icon">💾</span>
+                    <span class="badge-text">DBMS</span>
+                </div>
+                <div class="category-badge reveal reveal-delay-2">
+                    <span class="badge-icon">🐍</span>
+                    <span class="badge-text">Python</span>
+                </div>
+                <div class="category-badge reveal reveal-delay-3">
+                    <span class="badge-icon">☕</span>
+                    <span class="badge-text">Java</span>
+                </div>
+                <div class="category-badge reveal reveal-delay-4">
+                    <span class="badge-icon">🧮</span>
+                    <span class="badge-text">Mathematics</span>
+                </div>
+                <div class="category-badge reveal reveal-delay-5">
+                    <span class="badge-icon">🔬</span>
+                    <span class="badge-text">Science</span>
+                </div>
+                <div class="category-badge reveal reveal-delay-6">
+                    <span class="badge-icon">🌐</span>
+                    <span class="badge-text">General Knowledge</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── WHAT'S NEW ── -->
+        <section class="whats-new-section">
+            <div class="section-header reveal">
+                <span class="section-tag">New Update</span>
+                <h2 class="section-title">What’s New in 2026</h2>
+                <p class="section-sub">Fresh improvements across learning flow, fairness, and speed for every player.</p>
+            </div>
+            <div class="updates-grid">
+                <article class="update-card reveal reveal-delay-1">
+                    <span class="update-chip">NEW</span>
+                    <h3>Daily Challenge</h3>
+                    <p>One curated challenge every day to help you build consistency and improve rank steadily.</p>
+                </article>
+                <article class="update-card reveal reveal-delay-2">
+                    <span class="update-chip">UPGRADE</span>
+                    <h3>Faster Quiz Start</h3>
+                    <p>Optimized loading sequence makes quiz sessions open quicker, especially on mobile networks.</p>
+                </article>
+                <article class="update-card reveal reveal-delay-3">
+                    <span class="update-chip">IMPROVED</span>
+                    <h3>Cleaner Results View</h3>
+                    <p>Score insights now highlight strengths and weak points so you can focus on the right topics.</p>
+                </article>
+                <article class="update-card reveal reveal-delay-4">
+                    <span class="update-chip">SECURITY</span>
+                    <h3>Safer Attempts</h3>
+                    <p>Improved attempt validation and tighter flow controls keep competition fair for everyone.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ── LEADERBOARD PREVIEW ── -->
+        <section class="leaderboard-preview-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Top Players</span>
+                <h2 class="section-title">Hall of Champions</h2>
+                <p class="section-sub">These students dominate the leaderboard every season. Could your name be next?</p>
+            </div>
+            <div class="lp-wrapper reveal">
+                <div class="lp-table">
+                    <div class="lp-row lp-head">
+                        <span class="lp-rank">Rank</span>
+                        <span class="lp-name">Student</span>
+                        <span class="lp-topic">Topic</span>
+                        <span class="lp-score">Score</span>
+                        <span class="lp-time">Time</span>
+                    </div>
+                    <div class="lp-row lp-gold reveal reveal-delay-1">
+                        <span class="lp-rank">🥇 1</span>
+                        <span class="lp-name"><span class="lp-avatar lp-avatar-gold">RK</span>Rahul Kumar</span>
+                        <span class="lp-topic">Python</span>
+                        <span class="lp-score lp-score-val">9 / 9</span>
+                        <span class="lp-time">1m 42s</span>
+                    </div>
+                    <div class="lp-row reveal reveal-delay-2">
+                        <span class="lp-rank">🥈 2</span>
+                        <span class="lp-name"><span class="lp-avatar lp-avatar-silver">PT</span>Priya Thakur</span>
+                        <span class="lp-topic">DBMS</span>
+                        <span class="lp-score lp-score-val">8 / 9</span>
+                        <span class="lp-time">2m 05s</span>
+                    </div>
+                    <div class="lp-row reveal reveal-delay-3">
+                        <span class="lp-rank">🥉 3</span>
+                        <span class="lp-name"><span class="lp-avatar lp-avatar-violet">AS</span>Aman Sharma</span>
+                        <span class="lp-topic">Java</span>
+                        <span class="lp-score lp-score-val">8 / 9</span>
+                        <span class="lp-time">2m 18s</span>
+                    </div>
+                    <div class="lp-row reveal reveal-delay-4">
+                        <span class="lp-rank">4</span>
+                        <span class="lp-name"><span class="lp-avatar lp-avatar-green">NJ</span>Neha Joshi</span>
+                        <span class="lp-topic">Mathematics</span>
+                        <span class="lp-score lp-score-val">7 / 9</span>
+                        <span class="lp-time">3m 10s</span>
+                    </div>
+                    <div class="lp-row reveal reveal-delay-5">
+                        <span class="lp-rank">5</span>
+                        <span class="lp-name"><span class="lp-avatar lp-avatar-blue">VR</span>Vikram Rao</span>
+                        <span class="lp-topic">Science</span>
+                        <span class="lp-score lp-score-val">7 / 9</span>
+                        <span class="lp-time">3m 28s</span>
+                    </div>
+                </div>
+                <div class="lp-cta reveal">
+                    <p>Rankings update live after every quiz attempt.</p>
+                    <button onclick="location.href='Scoreboard.php';" class="btn btn-primary">View Full Leaderboard 🏆</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── LIVE FEEDBACK ── -->
+        <section class="feedback-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Community</span>
+                <h2 class="section-title">What Students Are Saying</h2>
+                <p class="section-sub">Real reviews from the Quiz Competitors community — loaded live from our database.</p>
+            </div>
+            <div class="feedback-grid" id="feedbackGrid">
+                <div class="feedback-loading">
+                    <div class="fb-spinner"></div>
+                    <p>Loading feedback…</p>
+                </div>
+            </div>
+            <div class="feedback-cta reveal">
+                <button class="btn btn-primary" id="openFeedbackBtn">✍️ Leave Your Feedback</button>
+            </div>
+        </section>
+
+        <!-- ── FAQ ── -->
+        <section class="faq-section">
+            <div class="section-header reveal">
+                <span class="section-tag">Help</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-sub">Quick answers about entry fee, timing, attempts, and rankings.</p>
+            </div>
+            <div class="faq-list" id="faqList">
+                <article class="faq-item reveal">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How much is the entry fee for a quiz?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Each competition requires a ₹10 entry fee, and rewards are distributed as announced for that quiz.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal reveal-delay-1">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I attempt the same quiz multiple times?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Per competition cycle, one valid attempt per user is allowed to maintain fairness in rankings.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal reveal-delay-2">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How are winners decided?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ranking is based on score and completion time. Higher score ranks first; faster time breaks ties.</p>
+                    </div>
+                </article>
+                <article class="faq-item reveal reveal-delay-3">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Do quizzes work on mobile devices?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. The full platform is responsive and works smoothly on phones, tablets, and desktops.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="cta-section">
+            <div class="cta-inner reveal">
+                <h2>Ready to Challenge Yourself?</h2>
+                <p>Join students and start competing today. Rankings reset with each new quiz — your chance to take the top spot!</p>
+                <button onclick="location.href='LOGINpage.php';" class="btn btn-primary btn-large">🚀 Get Started</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="landing-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="QUIZ">QUIZ COMPETITORS</h2>
+                <p>A competitive quiz platform for students of BCA, BSC, and beyond. Challenge yourself, climb the rankings, and prove your knowledge.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="about1.php">About Us</a></li>
+                    <li><a href="contact2.php">Contact</a></li>
+                    <li><a href="Scoreboard.php">Ranking</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="LOGINpage.php">Login</a></li>
+                    <li><a href="signup.php">Sign Up</a></li>
+                    <li><a href="account.php">My Account</a></li>
+                    <li><a href="adminlogin.php">Admin</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="welcomequiz.php">Start Quiz</a></li>
+                    <li><a href="Scoreboard.php">Leaderboard</a></li>
+                    <li><a href="about1.php">How It Works</a></li>
+                    <li><a href="contact2.php">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Quiz Competitors. All rights reserved.</p>
+            <span class="footer-credit">Designed &amp; Maintained by Koshal Thakur</span>
+        </div>
+    </footer>
+
+    <!-- ── FEEDBACK FLOATING BUTTON ── -->
+    <button class="fb-float-btn" id="fbFloatBtn" aria-label="Leave Feedback">
+        <span>💬</span><span class="fb-float-label">Feedback</span>
+    </button>
+    <button class="back-top-btn" id="backTopBtn" aria-label="Back to top">↑</button>
+
+    <!-- ── FEEDBACK MODAL ── -->
+    <div class="fb-modal-overlay" id="fbModal" role="dialog" aria-modal="true" aria-labelledby="fbModalTitle">
+        <div class="fb-modal-card">
+            <button class="fb-modal-close" id="fbModalClose" aria-label="Close">✕</button>
+            <div class="fb-modal-icon">💬</div>
+            <h2 id="fbModalTitle">Share Your Experience</h2>
+            <p>We love hearing from you! Rate your experience and let others know what you think.</p>
+            <form id="feedbackForm" novalidate>
+                <div class="fb-field">
+                    <label for="fbName">Your Name</label>
+                    <input type="text" id="fbName" name="name" placeholder="e.g. Rahul Kumar" maxlength="100" required>
+                </div>
+                <div class="fb-field">
+                    <label>Rating</label>
+                    <div class="fb-stars" id="fbStars">
+                        <button type="button" data-val="1">★</button>
+                        <button type="button" data-val="2">★</button>
+                        <button type="button" data-val="3">★</button>
+                        <button type="button" data-val="4">★</button>
+                        <button type="button" data-val="5">★</button>
+                    </div>
+                    <input type="hidden" id="fbRating" name="rating" value="5">
+                </div>
+                <div class="fb-field">
+                    <label for="fbMessage">Your Feedback</label>
+                    <textarea id="fbMessage" name="message" rows="4" placeholder="Tell us about your quiz experience…" maxlength="1000" required></textarea>
+                </div>
+                <div class="fb-msg" id="fbMsg"></div>
+                <button type="submit" class="btn btn-primary fb-submit" id="fbSubmitBtn">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="install-banner" id="installBanner" hidden>
+        <div class="install-banner-content">
+            <strong>Install Quiz Competitors</strong>
+            <span>Get faster access from your home screen.</span>
+        </div>
+        <div class="install-banner-actions">
+            <button class="install-banner-btn" id="installBannerBtn" type="button">Install</button>
+            <button class="install-banner-close" id="installBannerClose" type="button" aria-label="Dismiss install banner">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="jarvis.js"></script>
+    <script src="pwa-init.js"></script>
+    <script>
+    // ── Quiz Preview Interactive Timer ──
+    (function () {
+        const bar    = document.getElementById('qpBar');
+        const secsEl = document.getElementById('qpSecs');
+        const result = document.getElementById('qpResult');
+        const opts   = document.querySelectorAll('.qp-option');
+        let secs = 15, done = false;
+
+        const timer = setInterval(() => {
+            if (done) return;
+            secs--;
+            secsEl.textContent = secs;
+            if (bar) bar.style.width = ((15 - secs) / 15 * 100) + '%';
+            if (secs <= 5 && secsEl) secsEl.parentElement.classList.add('qp-timer-warn');
+            if (secs <= 0) {
+                clearInterval(timer);
+                endQuiz(false, null);
+            }
+        }, 1000);
+
+        opts.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (done) return;
+                clearInterval(timer);
+                endQuiz(btn.dataset.correct === 'true', btn);
+            });
+        });
+
+        function endQuiz(correct, btn) {
+            done = true;
+            opts.forEach(o => {
+                o.disabled = true;
+                if (o.dataset.correct === 'true') o.classList.add('qp-correct');
+                else o.classList.add('qp-wrong');
+            });
+            if (btn && btn.dataset.correct !== 'true') btn.classList.add('qp-selected-wrong');
+            result.textContent = secs <= 0
+                ? "⏰ Time's up! The answer was B. def"
+                : correct
+                    ? '✅ Correct! def is used to define functions in Python.'
+                    : '❌ Wrong! The correct answer is B. def';
+            result.className = 'qp-result ' + (correct ? 'qp-result-ok' : 'qp-result-bad');
+        }
+    })();
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Animated stats counter
+    (function () {
+        const numbers = document.querySelectorAll('.stat-number[data-target]');
+        if (!numbers.length) return;
+
+        const animateNumber = (el) => {
+            const target = parseInt(el.dataset.target || '0', 10);
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const duration = 1200;
+            const start = performance.now();
+
+            const tick = (now) => {
+                const progress = Math.min((now - start) / duration, 1);
+                const value = Math.floor(target * progress);
+                el.textContent = `${prefix}${value}${suffix}`;
+                if (progress < 1) requestAnimationFrame(tick);
+            };
+
+            requestAnimationFrame(tick);
+        };
+
+        const statObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    animateNumber(entry.target);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        numbers.forEach((n) => statObserver.observe(n));
+    })();
+
+    // FAQ accordion
+    (function () {
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                if (!item) return;
+                const isOpen = item.classList.contains('open');
+
+                document.querySelectorAll('.faq-item.open').forEach((openItem) => {
+                    openItem.classList.remove('open');
+                    const openBtn = openItem.querySelector('.faq-question');
+                    if (openBtn) openBtn.setAttribute('aria-expanded', 'false');
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+
+    // Back-to-top button
+    (function () {
+        const backTopBtn = document.getElementById('backTopBtn');
+        if (!backTopBtn) return;
+
+        const toggleBtn = () => {
+            if (window.scrollY > 450) backTopBtn.classList.add('show');
+            else backTopBtn.classList.remove('show');
+        };
+
+        window.addEventListener('scroll', toggleBtn, { passive: true });
+        toggleBtn();
+
+        backTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+
+    // ── LIVE INDIA DATE/TIME ───────────────────
+    (function () {
+        const indiaDateTime = document.getElementById('indiaDateTime');
+        if (!indiaDateTime) return;
+
+        const dateFmt = new Intl.DateTimeFormat('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            weekday: 'long',
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        });
+
+        const timeFmt = new Intl.DateTimeFormat('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+        });
+
+        function updateIndiaDateTime() {
+            const now = new Date();
+            indiaDateTime.textContent = `🇮🇳 India Time: ${dateFmt.format(now)} • ${timeFmt.format(now)} IST`;
+        }
+
+        updateIndiaDateTime();
+        setInterval(updateIndiaDateTime, 1000);
+    })();
+
+    // ── FEEDBACK ──────────────────────────────
+    const STARS = ['', '😞', '😐', '🙂', '😊', '🤩'];
+
+    function starsHtml(n) {
+        return '★'.repeat(n) + '☆'.repeat(5 - n);
+    }
+
+    function initials(name) {
+        return name.trim().split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+    }
+
+    function avatarClass(name) {
+        const palette = ['testi-avatar-c1','testi-avatar-c2','testi-avatar-c3','testi-avatar-c4','testi-avatar-c5','testi-avatar-c6','testi-avatar-c7','testi-avatar-c8'];
+        let h = 0;
+        for (let c of name) h = (h * 31 + c.charCodeAt(0)) & 0xffff;
+        return palette[h % palette.length];
+    }
+
+    function timeAgo(ts) {
+        const diff = Math.floor((Date.now() - new Date(ts.replace(' ','T') + 'Z')) / 1000);
+        if (diff < 60)   return 'just now';
+        if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+        if (diff < 86400)return Math.floor(diff/3600) + 'h ago';
+        return Math.floor(diff/86400) + 'd ago';
+    }
+
+    async function loadFeedback() {
+        const grid = document.getElementById('feedbackGrid');
+        try {
+            const res  = await fetch('feedback_fetch.php');
+            const data = await res.json();
+            if (!Array.isArray(data) || data.length === 0) {
+                grid.innerHTML = '<p class="fb-empty">No feedback yet — be the first to leave a review!</p>';
+                return;
+            }
+            grid.innerHTML = data.map(f => `
+                <div class="testi-card reveal">
+                    <div class="testi-stars" title="${STARS[+f.rating]}">${starsHtml(+f.rating)}</div>
+                    <p class="testi-text">"${f.message.replace(/</g,'&lt;').replace(/>/g,'&gt;')}"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar ${avatarClass(f.name)}">${initials(f.name)}</div>
+                        <div>
+                            <strong>${f.name.replace(/</g,'&lt;')}</strong>
+                            <span>${timeAgo(f.created_at)}</span>
+                        </div>
+                    </div>
+                </div>`).join('');
+            // reveal newly inserted cards
+            grid.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        } catch (e) {
+            grid.innerHTML = '<p class="fb-empty">Could not load feedback right now.</p>';
+        }
+    }
+    loadFeedback();
+
+    // Star picker
+    let selectedRating = 5;
+    const starBtns = document.querySelectorAll('#fbStars button');
+    function highlightStars(n) {
+        starBtns.forEach(b => b.classList.toggle('active', +b.dataset.val <= n));
+    }
+    highlightStars(5);
+    starBtns.forEach(b => {
+        b.addEventListener('click', () => { selectedRating = +b.dataset.val; document.getElementById('fbRating').value = selectedRating; highlightStars(selectedRating); });
+        b.addEventListener('mouseenter', () => highlightStars(+b.dataset.val));
+        b.addEventListener('mouseleave', () => highlightStars(selectedRating));
+    });
+
+    // Modal open/close
+    function openModal() { document.getElementById('fbModal').classList.add('visible'); document.body.style.overflow = 'hidden'; }
+    function closeModal() { document.getElementById('fbModal').classList.remove('visible'); document.body.style.overflow = ''; }
+    document.getElementById('openFeedbackBtn').addEventListener('click', openModal);
+    document.getElementById('fbFloatBtn').addEventListener('click', openModal);
+    document.getElementById('fbModalClose').addEventListener('click', closeModal);
+    document.getElementById('fbModal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // Submit
+    document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('fbSubmitBtn');
+        const msg = document.getElementById('fbMsg');
+        const name = document.getElementById('fbName').value.trim();
+        const message = document.getElementById('fbMessage').value.trim();
+        if (!name || !message) { msg.textContent = 'Please fill in all fields.'; msg.className = 'fb-msg fb-msg-err'; return; }
+        btn.disabled = true; btn.textContent = 'Sending…';
+        try {
+            const fd = new FormData();
+            fd.append('name', name);
+            fd.append('rating', selectedRating);
+            fd.append('message', message);
+            const res = await fetch('feedback_submit.php', { method: 'POST', body: fd });
+            const data = await res.json();
+            if (data.success) {
+                msg.textContent = '🎉 Thank you! Your feedback has been saved.';
+                msg.className = 'fb-msg fb-msg-ok';
+                this.reset(); highlightStars(5); selectedRating = 5;
+                setTimeout(() => { closeModal(); loadFeedback(); msg.textContent = ''; }, 1800);
+            } else {
+                msg.textContent = data.message || 'Something went wrong.';
+                msg.className = 'fb-msg fb-msg-err';
+            }
+        } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'fb-msg fb-msg-err';
+        }
+        btn.disabled = false; btn.textContent = 'Submit Feedback';
+    });
+
+    // ── SCROLL PROGRESS + HERO PARALLAX ─────────────
+    (function () {
+        const progress = document.getElementById('scrollProgress');
+        const hero = document.querySelector('.hero-section');
+        const orbs = hero ? hero.querySelectorAll('.hero-orb') : [];
+
+        const updateProgress = () => {
+            if (!progress) return;
+            const doc = document.documentElement;
+            const scrollTop = doc.scrollTop || document.body.scrollTop;
+            const height = doc.scrollHeight - doc.clientHeight;
+            const percent = height > 0 ? (scrollTop / height) * 100 : 0;
+            progress.style.width = percent + '%';
+        };
+
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+
+        if (!hero || !orbs.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            orbs.forEach((orb, idx) => {
+                const depth = (idx + 1) * 10;
+                orb.style.transform = `translate(${x * depth}px, ${y * depth}px)`;
+            });
+        });
+
+        hero.addEventListener('mouseleave', () => {
+            orbs.forEach((orb) => {
+                orb.style.transform = '';
+            });
+        });
+    })();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

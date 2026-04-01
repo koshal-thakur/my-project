@@ -1,0 +1,287 @@
+/* css used for about us section */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --theme-primary: #0f766e;
+  --theme-secondary: #f97316;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 118, 110, 0.42)),
+    url('welcomebackground.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+section {
+  width: min(1200px, calc(100% - 32px));
+  margin: 120px auto 30px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 24px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(15, 23, 42, 0.92);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+/* .QUIZ {
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+} */
+
+.QUIZ {
+  margin-left: -65px;
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: linear-gradient(135deg, #2dd4bf, #fb923c);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-position: 0 0;
+  animation: none;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+@keyframes back{
+  100%{
+      background-position: 2000px 0;
+  }
+}
+.navigation {
+  margin-right: -60px;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation .btnlogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+h1 {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #ffffff;
+}
+
+.about {
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.2);
+}
+
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+
+}
+
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+
+.card img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-weight: 500;
+}
+
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.card:hover {
+  background: linear-gradient(#0ea5a0, #f97316);
+  color: #ffffff;
+}
+
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+
+  .card {
+    padding: 5em 1em;
+  }
+
+  .column {
+    align-self: center;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 1em 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    margin-top: 115px;
+    padding: 20px 14px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+.column_1 {
+  margin-left: 15%;
+}
+
+.column_1 {
+  align-self: center;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 1em 1em;
+}
+
+/* 2026 theme refresh */
+header {
+  background: rgba(15,10,30,.92);
+  -webkit-backdrop-filter: blur(14px) saturate(170%);
+          backdrop-filter: blur(14px) saturate(170%);
+  border-bottom: 1px solid rgba(124,58,237,.22);
+}
+
+.QUIZ {
+  -webkit-text-stroke: 0;
+  background: linear-gradient(135deg, #a78bfa, #38bdf8);
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.navigation .btnlogin-popup {
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+  border: none;
+  border-radius: 999px;
+}
+
+.navigation .btnlogin-popup:hover {
+  color: #fff;
+  opacity: .9;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+}

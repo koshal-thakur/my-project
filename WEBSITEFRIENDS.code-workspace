@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../xampp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WEBSITEFRIENDS"
+	}
+}

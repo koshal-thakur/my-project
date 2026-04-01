@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Quiz Competitors">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#g1)"/>
+  <circle cx="256" cy="192" r="82" fill="#fff" opacity="0.95"/>
+  <path d="M166 314h180a32 32 0 0 1 32 32v22a20 20 0 0 1-20 20H154a20 20 0 0 1-20-20v-22a32 32 0 0 1 32-32z" fill="#fff" opacity="0.95"/>
+  <path d="M228 192l24 24 44-44" stroke="#6366f1" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

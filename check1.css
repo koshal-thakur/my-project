@@ -1,0 +1,69 @@
+/* css used for main page(startup) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Set default styles for all devices */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+    background: rgba(15,23,42,.92);
+    padding: 0em 1em;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.QUIZ {
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 0;
+    background: linear-gradient(135deg, #2dd4bf, #fb923c);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    animation: none;
+  } 
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item a{
+    margin: 1em;
+    text-decoration: none;
+    color: #f1f5f9;
+}
+
+@media  screen and (max-width:949px) {
+.QUIZ{
+    display: flex;
+    justify-content: center;
+}
+    .navigation{
+    flex-direction: column;
+}
+}
+
+@media  screen and (max-width:949px) {
+    .QUIZ{
+        display: flex;
+        justify-content: center;
+    }
+        .navigation{
+        flex-direction: column;
+    }
+    }
+    @media  screen and (max-width:532px) {
+        .QUIZ{
+            font-size: 1.9em;
+        }
+.navigation a{
+    font-size: 12px;
+}
+
+        }
+         
